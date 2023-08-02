@@ -5,7 +5,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_TBX_ENDPOINT;
 export const getPosts = async () => {
   const query = gql`
     query MyQuery {
-      postsConnection(orderBy: publishedAt_ASC) {
+      postsConnection(orderBy: publishedAt_DESC) {
         edges {
           node {
             author {
